@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1, "title": "Introduction to Artificial Intelligence",
+    "category": "Artificial Intelligence",
+    "file_name": "ai_intro.txt",
+    "content": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction. AI applications include expert systems, natural language processing, speech recognition, and machine vision. AI can be categorized as weak AI, which is designed to perform a narrow task, and strong AI, which can perform any intellectual task that a human can."
+  },
+  {
+    "id": 2, "title": "AI in Healthcare and Medical Diagnosis",
+    "category": "Artificial Intelligence",
+    "file_name": "ai_healthcare.txt",
+    "content": "Artificial Intelligence is transforming healthcare by enabling faster and more accurate medical diagnosis. Machine learning algorithms can analyze medical images such as X-rays, MRI scans, and CT scans to detect diseases like cancer, pneumonia, and diabetic retinopathy. AI-powered diagnostic tools help doctors identify diseases earlier and with greater precision. Natural language processing systems extract information from patient records to assist clinical decision-making."
+  },
+  {
+    "id": 3, "title": "Expert Systems and Knowledge Representation",
+    "category": "Artificial Intelligence",
+    "file_name": "expert_systems.txt",
+    "content": "An expert system is a computer program that simulates the judgment and behavior of a human expert in a particular domain. Expert systems use a knowledge base of facts and rules to solve complex problems. They consist of two main components: a knowledge base and an inference engine. The inference engine applies logical rules to the knowledge base to deduce new facts. Expert systems have been used in medical diagnosis, financial analysis, and engineering design."
+  },
+  {
+    "id": 4, "title": "Natural Language Processing Fundamentals",
+    "category": "Artificial Intelligence",
+    "file_name": "nlp_fundamentals.txt",
+    "content": "Natural Language Processing is a subfield of artificial intelligence that focuses on the interaction between computers and humans through natural language. NLP tasks include text classification, sentiment analysis, machine translation, question answering, and text summarization. Techniques such as tokenization, part-of-speech tagging, named entity recognition, and dependency parsing are fundamental to NLP pipelines. Modern NLP relies heavily on transformer architectures and large language models."
+  },
+  {
+    "id": 5, "title": "Computer Vision and Image Recognition",
+    "category": "Artificial Intelligence",
+    "file_name": "computer_vision.txt",
+    "content": "Computer vision enables machines to interpret and understand visual information from the world. Image recognition, object detection, image segmentation, and facial recognition are key computer vision tasks. Convolutional neural networks have revolutionized image processing by automatically learning spatial hierarchies of features from images. Applications include autonomous vehicles, medical imaging, surveillance systems, and augmented reality."
+  },
+  {
+    "id": 6, "title": "Introduction to Machine Learning",
+    "category": "Machine Learning",
+    "file_name": "ml_intro.txt",
+    "content": "Machine Learning is a branch of artificial intelligence that allows systems to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on developing algorithms that can access data and use it to learn for themselves. The primary aim is to allow computers to learn automatically without human intervention. Types of machine learning include supervised learning, unsupervised learning, and reinforcement learning."
+  },
+  {
+    "id": 7, "title": "Supervised Learning Algorithms",
+    "category": "Machine Learning",
+    "file_name": "supervised_learning.txt",
+    "content": "Supervised learning is a type of machine learning where the algorithm learns from labeled training data. Common supervised learning algorithms include linear regression, logistic regression, decision trees, random forests, support vector machines, and k-nearest neighbors. The algorithm maps input features to output labels by learning from examples. After training, the model can predict labels for new unseen data. Evaluation metrics include accuracy, precision, recall, and F1-score."
+  },
+  {
+    "id": 8, "title": "Unsupervised Learning and Clustering",
+    "category": "Machine Learning",
+    "file_name": "unsupervised_learning.txt",
+    "content": "Unsupervised learning involves finding hidden patterns or intrinsic structures in unlabeled data. K-means clustering, hierarchical clustering, DBSCAN, and Gaussian mixture models are popular clustering algorithms. Dimensionality reduction techniques like PCA and t-SNE help visualize high-dimensional data. Unsupervised learning is useful for customer segmentation, anomaly detection, recommendation systems, and topic modeling in text documents."
+  },
+  {
+    "id": 9, "title": "Decision Trees and Random Forests",
+    "category": "Machine Learning",
+    "file_name": "decision_trees.txt",
+    "content": "A decision tree is a flowchart-like structure where each internal node represents a feature, each branch represents a decision rule, and each leaf node represents an outcome. Decision trees are easy to interpret and visualize. Random forests are ensemble methods that build multiple decision trees and merge them to get a more accurate and stable prediction. Feature importance, Gini impurity, and information gain are key concepts in tree-based learning."
+  },
+  {
+    "id": 10, "title": "Support Vector Machines",
+    "category": "Machine Learning",
+    "file_name": "svm.txt",
+    "content": "Support Vector Machines are supervised learning models used for classification and regression tasks. SVM finds the hyperplane that best separates data into classes by maximizing the margin between classes. The kernel trick allows SVM to classify non-linearly separable data by mapping it to a higher-dimensional space. Common kernels include linear, polynomial, and radial basis function. SVM is effective in high-dimensional spaces and is widely used in text classification and bioinformatics."
+  },
+  {
+    "id": 11, "title": "Model Evaluation and Cross-Validation",
+    "category": "Machine Learning",
+    "file_name": "model_evaluation.txt",
+    "content": "Model evaluation is the process of assessing the performance of a machine learning model. Cross-validation techniques like k-fold cross-validation help estimate model performance on unseen data. Important evaluation metrics include accuracy, precision, recall, F1-score, AUC-ROC curve, and mean squared error. Overfitting occurs when a model performs well on training data but poorly on test data. Regularization techniques like L1 and L2 help prevent overfitting."
+  },
+  {
+    "id": 12, "title": "Feature Engineering and Selection",
+    "category": "Machine Learning",
+    "file_name": "feature_engineering.txt",
+    "content": "Feature engineering is the process of using domain knowledge to create, transform, or select input variables for machine learning models. Good features can significantly improve model performance. Techniques include normalization, standardization, one-hot encoding, polynomial features, and feature extraction. Feature selection methods such as correlation analysis, mutual information, and recursive feature elimination help identify the most relevant features and reduce dimensionality."
+  },
+  {
+    "id": 13, "title": "Introduction to Deep Learning",
+    "category": "Deep Learning",
+    "file_name": "dl_intro.txt",
+    "content": "Deep learning is a subset of machine learning that uses neural networks with many layers to learn representations of data with multiple levels of abstraction. Deep learning has achieved remarkable results in image recognition, speech recognition, natural language processing, and game playing. The depth of the network allows it to learn complex hierarchical features automatically from raw data without manual feature engineering."
+  },
+  {
+    "id": 14, "title": "Neural Networks and Backpropagation",
+    "category": "Deep Learning",
+    "file_name": "neural_networks.txt",
+    "content": "Artificial neural networks are computing systems inspired by biological neural networks. They consist of layers of interconnected nodes called neurons. Backpropagation is the algorithm used to train neural networks by computing the gradient of the loss function with respect to weights. Activation functions like ReLU, sigmoid, and tanh introduce non-linearity. Gradient descent optimizes the weights iteratively to minimize prediction errors."
+  },
+  {
+    "id": 15, "title": "Convolutional Neural Networks for Image Processing",
+    "category": "Deep Learning",
+    "file_name": "cnn.txt",
+    "content": "Convolutional Neural Networks are specialized neural networks designed for processing structured grid data like images. CNNs use convolutional layers to detect local patterns such as edges, textures, and shapes. Pooling layers reduce spatial dimensions and computational complexity. Fully connected layers at the end perform classification. Famous CNN architectures include AlexNet, VGG, ResNet, and Inception. Transfer learning with pre-trained CNNs is widely used in image classification tasks."
+  },
+  {
+    "id": 16, "title": "Recurrent Neural Networks and LSTM",
+    "category": "Deep Learning",
+    "file_name": "rnn_lstm.txt",
+    "content": "Recurrent Neural Networks are designed to process sequential data by maintaining a hidden state that captures information from previous time steps. RNNs suffer from vanishing and exploding gradient problems for long sequences. Long Short-Term Memory networks solve this with gating mechanisms: input gate, forget gate, and output gate. LSTMs are used in text generation, machine translation, speech recognition, and time series forecasting."
+  },
+  {
+    "id": 17, "title": "Generative Adversarial Networks",
+    "category": "Deep Learning",
+    "file_name": "gans.txt",
+    "content": "Generative Adversarial Networks consist of two neural networks: a generator and a discriminator. The generator creates fake samples while the discriminator tries to distinguish real from fake. They compete in a minimax game until the generator produces realistic outputs. GANs have been used to generate realistic images, create deepfakes, perform data augmentation, and generate synthetic training data. Variants include DCGAN, WGAN, and StyleGAN."
+  },
+  {
+    "id": 18, "title": "Transfer Learning and Pre-trained Models",
+    "category": "Deep Learning",
+    "file_name": "transfer_learning.txt",
+    "content": "Transfer learning is a technique where a model trained on one task is reused as a starting point for a model on a different but related task. Pre-trained models like VGG, ResNet, BERT, and GPT have been trained on massive datasets. Fine-tuning adapts these models to specific tasks with smaller datasets. Transfer learning reduces training time and data requirements significantly. It has enabled state-of-the-art results in NLP and computer vision with limited labeled data."
+  },
+  {
+    "id": 19, "title": "Transformer Architecture and Attention Mechanism",
+    "category": "Deep Learning",
+    "file_name": "transformers.txt",
+    "content": "The Transformer architecture introduced the self-attention mechanism that allows models to weigh the importance of different parts of the input sequence. Unlike RNNs, Transformers process all tokens in parallel, enabling efficient training on large datasets. Multi-head attention captures different aspects of relationships between tokens. Transformers have become the foundation of modern NLP models including BERT, GPT, and T5. The encoder-decoder structure is used in machine translation and text summarization."
+  },
+  {
+    "id": 20, "title": "Introduction to Data Science",
+    "category": "Data Science",
+    "file_name": "ds_intro.txt",
+    "content": "Data Science is an interdisciplinary field that combines statistics, computer science, and domain expertise to extract insights and knowledge from data. The data science workflow includes data collection, data cleaning, exploratory data analysis, feature engineering, model building, evaluation, and deployment. Data scientists use tools like Python, R, SQL, and visualization libraries to analyze and communicate findings from complex datasets."
+  },
+  {
+    "id": 21, "title": "Data Cleaning and Preprocessing Techniques",
+    "category": "Data Science",
+    "file_name": "data_cleaning.txt",
+    "content": "Data cleaning is the process of detecting and correcting errors, inconsistencies, and missing values in datasets. Techniques include handling missing data through imputation or deletion, removing duplicate records, correcting data types, and dealing with outliers. Data normalization and standardization prepare numerical features for machine learning. Clean, high-quality data is essential for building accurate and reliable predictive models."
+  },
+  {
+    "id": 22, "title": "Exploratory Data Analysis",
+    "category": "Data Science",
+    "file_name": "eda.txt",
+    "content": "Exploratory Data Analysis is the process of analyzing datasets to summarize their main characteristics using statistical and visual methods. EDA involves computing descriptive statistics, identifying distributions, finding correlations, detecting outliers, and visualizing patterns. Tools like matplotlib, seaborn, and plotly help create informative visualizations. EDA is a critical step before applying machine learning models as it guides feature selection and modeling decisions."
+  },
+  {
+    "id": 23, "title": "Statistical Analysis and Hypothesis Testing",
+    "category": "Data Science",
+    "file_name": "statistics.txt",
+    "content": "Statistical analysis involves collecting, analyzing, interpreting, and presenting data to uncover patterns and insights. Hypothesis testing determines whether observed results are statistically significant. Key concepts include p-values, confidence intervals, t-tests, chi-square tests, and ANOVA. Probability distributions such as normal, binomial, and Poisson distributions form the mathematical foundation of statistical inference used in data science and machine learning."
+  },
+  {
+    "id": 24, "title": "Big Data Technologies and Hadoop",
+    "category": "Data Science",
+    "file_name": "big_data.txt",
+    "content": "Big data refers to extremely large datasets that cannot be processed using traditional data management tools. The three Vs of big data are volume, velocity, and variety. Apache Hadoop provides a distributed storage and processing framework using HDFS and MapReduce. Apache Spark offers in-memory processing that is significantly faster than Hadoop MapReduce. Big data technologies are used in social media analytics, financial fraud detection, and genomics research."
+  },
+  {
+    "id": 25, "title": "Data Visualization and Storytelling",
+    "category": "Data Science",
+    "file_name": "data_viz.txt",
+    "content": "Data visualization transforms complex datasets into visual representations that are easier to understand. Effective visualizations tell a story and communicate insights clearly to both technical and non-technical audiences. Common chart types include bar charts, line charts, scatter plots, histograms, heatmaps, and box plots. Dashboards built with tools like Tableau, Power BI, or Python libraries provide interactive exploration of data."
+  },
+  {
+    "id": 26, "title": "Introduction to Cybersecurity",
+    "category": "Cybersecurity",
+    "file_name": "cybersecurity_intro.txt",
+    "content": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. Cyber threats include malware, phishing, ransomware, denial-of-service attacks, and data breaches. Security principles include confidentiality, integrity, and availability, known as the CIA triad. Cybersecurity professionals implement firewalls, intrusion detection systems, encryption, and access controls to protect sensitive information and critical infrastructure."
+  },
+  {
+    "id": 27, "title": "Network Security and Firewalls",
+    "category": "Cybersecurity",
+    "file_name": "network_security.txt",
+    "content": "Network security involves protecting a computer network from unauthorized access, misuse, and attacks. Firewalls monitor and control incoming and outgoing network traffic based on predefined security rules. Intrusion detection systems and intrusion prevention systems identify and respond to suspicious activity. VPNs encrypt network traffic to secure communications over public networks. Network segmentation, DMZ zones, and zero-trust architecture are modern network security strategies."
+  },
+  {
+    "id": 28, "title": "Cryptography and Encryption",
+    "category": "Cybersecurity",
+    "file_name": "cryptography.txt",
+    "content": "Cryptography is the science of securing information through encoding. Symmetric encryption uses the same key for encryption and decryption, as seen in AES. Asymmetric encryption uses public and private key pairs, as in RSA. Hash functions like SHA-256 produce fixed-size outputs from variable inputs and are used for data integrity. Digital signatures authenticate the sender of a message. Public key infrastructure manages digital certificates for secure communications."
+  },
+  {
+    "id": 29, "title": "Ethical Hacking and Penetration Testing",
+    "category": "Cybersecurity",
+    "file_name": "ethical_hacking.txt",
+    "content": "Ethical hacking involves authorized attempts to exploit computer systems to identify security vulnerabilities before malicious hackers do. Penetration testing follows a structured methodology: reconnaissance, scanning, exploitation, and reporting. Tools like Nmap, Metasploit, Burp Suite, and Wireshark are used in penetration testing. Bug bounty programs reward security researchers for responsibly disclosing vulnerabilities. Ethical hackers must obtain proper written authorization before testing."
+  },
+  {
+    "id": 30, "title": "Malware Analysis and Threat Intelligence",
+    "category": "Cybersecurity",
+    "file_name": "malware.txt",
+    "content": "Malware is malicious software designed to harm, exploit, or otherwise compromise computer systems. Types include viruses, worms, trojans, ransomware, spyware, and rootkits. Malware analysis involves static analysis of code and dynamic analysis of runtime behavior in sandboxed environments. Threat intelligence collects and analyzes information about current and emerging cyber threats. Antivirus software, behavioral analysis, and machine learning are used for malware detection."
+  },
+  {
+    "id": 31, "title": "Introduction to Cloud Computing",
+    "category": "Cloud Computing",
+    "file_name": "cloud_intro.txt",
+    "content": "Cloud computing delivers computing services including servers, storage, databases, networking, software, and analytics over the internet. Cloud service models include Infrastructure as a Service, Platform as a Service, and Software as a Service. Deployment models include public cloud, private cloud, and hybrid cloud. Major cloud providers include Amazon Web Services, Microsoft Azure, and Google Cloud Platform. Cloud computing offers scalability, flexibility, cost efficiency, and high availability."
+  },
+  {
+    "id": 32, "title": "Cloud Storage and Content Delivery",
+    "category": "Cloud Computing",
+    "file_name": "cloud_storage.txt",
+    "content": "Cloud storage allows users to store and access data over the internet instead of on local hard drives. Object storage services like Amazon S3 store unstructured data such as images, videos, and backups. Block storage provides persistent storage volumes for virtual machines. Content Delivery Networks cache static content at edge locations worldwide to reduce latency and improve performance for users globally. Data redundancy and geographic replication ensure durability and availability."
+  },
+  {
+    "id": 33, "title": "Virtualization and Containers",
+    "category": "Cloud Computing",
+    "file_name": "virtualization.txt",
+    "content": "Virtualization creates virtual versions of hardware resources, allowing multiple operating systems to run on a single physical machine. Hypervisors such as VMware and KVM manage virtual machines. Containers provide lightweight virtualization at the operating system level. Docker packages applications and their dependencies into portable containers. Container orchestration platforms manage the deployment, scaling, and management of containerized applications across clusters of machines."
+  },
+  {
+    "id": 34, "title": "Serverless Computing and Functions",
+    "category": "Cloud Computing",
+    "file_name": "serverless.txt",
+    "content": "Serverless computing is a cloud execution model where the cloud provider dynamically manages server allocation. Developers write functions that are triggered by events without managing underlying servers. AWS Lambda, Azure Functions, and Google Cloud Functions are popular serverless platforms. Serverless is cost-effective as users pay only for actual compute time consumed. It is ideal for event-driven applications, data processing pipelines, and API backends with variable traffic."
+  },
+  {
+    "id": 35, "title": "Cloud Security and Compliance",
+    "category": "Cloud Computing",
+    "file_name": "cloud_security.txt",
+    "content": "Cloud security encompasses policies, technologies, and controls that protect data, applications, and infrastructure in cloud environments. Shared responsibility model defines security duties between cloud provider and customer. Identity and Access Management controls who can access cloud resources. Data encryption at rest and in transit protects sensitive information. Compliance standards like GDPR, HIPAA, and PCI-DSS govern how organizations handle and protect data in the cloud."
+  },
+  {
+    "id": 36, "title": "Introduction to Information Retrieval",
+    "category": "Information Retrieval",
+    "file_name": "ir_intro.txt",
+    "content": "Information Retrieval is the science of searching for information in documents, databases, and the web. Core IR tasks include indexing, query processing, document ranking, and relevance evaluation. The Boolean model, vector space model, and probabilistic model are fundamental IR models. Precision and recall are standard metrics for evaluating retrieval effectiveness. Search engines like Google use advanced IR techniques combined with link analysis and machine learning."
+  },
+  {
+    "id": 37, "title": "Inverted Index and Document Indexing",
+    "category": "Information Retrieval",
+    "file_name": "inverted_index.txt",
+    "content": "An inverted index maps terms to the list of documents that contain them, enabling fast full-text search. Building an inverted index involves tokenizing documents, removing stop words, stemming or lemmatizing terms, and recording term-document relationships with frequency counts. Posting lists store document IDs and positions for each term. Index compression techniques like delta encoding reduce storage requirements. Search engines maintain and update inverted indexes for billions of web pages."
+  },
+  {
+    "id": 38, "title": "TF-IDF and Term Weighting",
+    "category": "Information Retrieval",
+    "file_name": "tfidf.txt",
+    "content": "TF-IDF stands for Term Frequency-Inverse Document Frequency. Term frequency measures how often a term appears in a document. Inverse document frequency measures how rare a term is across all documents. The TF-IDF score gives higher weight to terms that are frequent in a document but rare across the collection. This weighting scheme is fundamental to the vector space model of information retrieval and is widely used in document ranking and text classification."
+  },
+  {
+    "id": 39, "title": "Relevance Feedback and Query Expansion",
+    "category": "Information Retrieval",
+    "file_name": "relevance_feedback.txt",
+    "content": "Relevance feedback improves search results by using information from the user about the relevance of initial results. The Rocchio algorithm modifies the query vector by moving it toward relevant documents and away from non-relevant ones. Pseudo-relevance feedback assumes top-ranked documents are relevant and expands the query automatically. Query expansion adds synonyms and related terms to broaden the search. These techniques help bridge the vocabulary gap between queries and documents."
+  },
+  {
+    "id": 40, "title": "Semantic Search and Word Embeddings",
+    "category": "Information Retrieval",
+    "file_name": "semantic_search.txt",
+    "content": "Semantic search understands the meaning and context of a query rather than matching exact keywords. Word embeddings represent words as dense vectors in a continuous vector space where semantically similar words are close together. Word2Vec, GloVe, and FastText are popular word embedding models. Document vectors are created by averaging word embeddings. Cosine similarity measures the angle between query and document vectors to determine semantic relevance beyond keyword overlap."
+  },
+  {
+    "id": 41, "title": "Web Crawling and Search Engine Architecture",
+    "category": "Information Retrieval",
+    "file_name": "web_crawling.txt",
+    "content": "Web crawlers automatically browse the internet to collect web pages for indexing. A crawler starts from seed URLs and follows hyperlinks to discover new pages. Politeness policies prevent overloading web servers. The crawled pages are indexed in an inverted index for fast retrieval. Search engine architecture includes crawling, indexing, query processing, and ranking components. PageRank and other link analysis algorithms measure the importance of web pages based on the link structure."
+  },
+  {
+    "id": 42, "title": "Introduction to Computer Networks",
+    "category": "Computer Networks",
+    "file_name": "networks_intro.txt",
+    "content": "A computer network is a group of computers connected together to share resources and communicate. Networks are classified by size: Local Area Networks, Wide Area Networks, and Metropolitan Area Networks. Network topologies include bus, ring, star, mesh, and hybrid. The OSI model defines seven layers of network communication: physical, data link, network, transport, session, presentation, and application. Protocols are rules that govern how data is transmitted across networks."
+  },
+  {
+    "id": 43, "title": "TCP/IP Protocol Suite",
+    "category": "Computer Networks",
+    "file_name": "tcp_ip.txt",
+    "content": "The TCP/IP protocol suite is the foundation of internet communication. IP provides logical addressing and routing of packets between networks. TCP provides reliable, ordered, and error-checked delivery of data between applications. UDP provides faster but unreliable connectionless communication. The IP address identifies devices on a network, while port numbers identify specific applications. DNS translates domain names to IP addresses. HTTP, FTP, SMTP, and SSH are application layer protocols built on TCP/IP."
+  },
+  {
+    "id": 44, "title": "Network Routing and Switching",
+    "category": "Computer Networks",
+    "file_name": "routing.txt",
+    "content": "Routing is the process of selecting paths for network traffic to travel from source to destination. Routers operate at the network layer and use routing tables to forward packets. Static routing manually configures routes while dynamic routing protocols like OSPF and BGP automatically discover and update routes. Switches operate at the data link layer and forward frames within a local area network using MAC address tables. VLANs segment a physical network into multiple logical networks for better security and performance."
+  },
+  {
+    "id": 45, "title": "Wireless Networks and WiFi Standards",
+    "category": "Computer Networks",
+    "file_name": "wireless.txt",
+    "content": "Wireless networks transmit data using radio waves instead of physical cables. WiFi standards defined by IEEE 802.11 include 802.11n, 802.11ac, and 802.11ax providing increasing speeds and range. Bluetooth is used for short-range personal area networks. Mobile networks including 4G LTE and 5G provide cellular connectivity. Wireless security protocols include WPA2 and WPA3 to protect data from eavesdropping. Access points, wireless controllers, and antennas are key infrastructure components."
+  },
+  {
+    "id": 46, "title": "HTTP and Web Communication Protocols",
+    "category": "Computer Networks",
+    "file_name": "http.txt",
+    "content": "HTTP is the protocol used for transmitting web pages and data on the internet. HTTP follows a request-response model where clients send requests and servers return responses. HTTP methods include GET, POST, PUT, DELETE, and PATCH. HTTPS adds TLS encryption for secure communication. HTTP/2 improves performance with multiplexing and header compression. REST APIs use HTTP methods and status codes to build web services. WebSockets provide full-duplex communication channels over a single connection."
+  },
+  {
+    "id": 47, "title": "Internet of Things and Connected Devices",
+    "category": "Computer Networks",
+    "file_name": "iot.txt",
+    "content": "The Internet of Things refers to the network of physical devices embedded with sensors, software, and connectivity to collect and exchange data. IoT devices include smart home appliances, wearables, industrial sensors, and connected vehicles. MQTT and CoAP are lightweight protocols designed for IoT communication. Edge computing processes data closer to IoT devices to reduce latency. IoT raises significant challenges in security, privacy, scalability, and interoperability of diverse devices and platforms."
+  },
+  {
+    "id": 48, "title": "Blockchain Technology and Distributed Ledgers",
+    "category": "General Technology",
+    "file_name": "blockchain.txt",
+    "content": "Blockchain is a decentralized, distributed ledger that records transactions across multiple computers. Each block contains a cryptographic hash of the previous block, creating an immutable chain. Consensus mechanisms like Proof of Work and Proof of Stake validate transactions. Smart contracts are self-executing programs stored on blockchain. Cryptocurrencies like Bitcoin and Ethereum use blockchain technology. Applications extend to supply chain management, digital identity, and decentralized finance."
+  },
+  {
+    "id": 49, "title": "Quantum Computing Fundamentals",
+    "category": "General Technology",
+    "file_name": "quantum.txt",
+    "content": "Quantum computing uses quantum mechanical phenomena like superposition and entanglement to perform computations. Quantum bits or qubits can represent both 0 and 1 simultaneously through superposition. Quantum gates manipulate qubits to perform operations. Quantum algorithms like Shor's algorithm and Grover's algorithm solve problems exponentially faster than classical computers. Quantum computing has potential applications in cryptography, drug discovery, optimization, and financial modeling."
+  },
+  {
+    "id": 50, "title": "Augmented Reality and Virtual Reality",
+    "category": "General Technology",
+    "file_name": "ar_vr.txt",
+    "content": "Augmented Reality overlays digital information onto the real world through devices like smartphones and AR glasses. Virtual Reality creates a completely immersive digital environment experienced through VR headsets. Mixed reality combines elements of both AR and VR. Applications include gaming, education, training simulations, architecture visualization, and remote collaboration. Technologies like SLAM enable AR systems to track and map environments in real time for accurate digital overlay."
+  },
+  {
+    "id": 51, "title": "Robotics and Automation",
+    "category": "General Technology",
+    "file_name": "robotics.txt",
+    "content": "Robotics combines engineering, computer science, and artificial intelligence to design, build, and program robots. Industrial robots perform tasks like welding, assembly, painting, and material handling in manufacturing. Autonomous robots use sensors, actuators, and AI to navigate and interact with environments without human control. Robotic process automation automates repetitive software tasks in business workflows. Collaborative robots or cobots work alongside humans safely in shared workspaces."
+  },
+  {
+    "id": 52, "title": "Software Development Lifecycle",
+    "category": "General Technology",
+    "file_name": "sdlc.txt",
+    "content": "The Software Development Lifecycle is a process used by the software industry to design, develop, and test high-quality software. SDLC phases include planning, requirements analysis, system design, implementation, testing, deployment, and maintenance. Agile methodology emphasizes iterative development, collaboration, and responding to change. Scrum uses sprints and daily standups to deliver working software incrementally. DevOps practices integrate development and operations for faster and more reliable software delivery."
+  },
+  {
+    "id": 53, "title": "Database Management Systems",
+    "category": "General Technology",
+    "file_name": "dbms.txt",
+    "content": "A Database Management System is software that manages the storage, retrieval, and manipulation of data. Relational databases organize data into tables with rows and columns and use SQL for queries. ACID properties ensure database transactions are atomic, consistent, isolated, and durable. NoSQL databases like MongoDB, Cassandra, and Redis handle unstructured data with flexible schemas. Database indexing, normalization, query optimization, and backup strategies are essential database management concepts."
+  },
+  {
+    "id": 54, "title": "Operating System Fundamentals",
+    "category": "General Technology",
+    "file_name": "os_fundamentals.txt",
+    "content": "An operating system manages computer hardware and software resources and provides common services for programs. Core OS functions include process management, memory management, file system management, and device management. Process scheduling algorithms determine the order in which processes execute. Virtual memory allows programs to use more memory than physically available through paging and segmentation. Operating systems like Linux, Windows, and macOS provide different interfaces and capabilities."
+  },
+  {
+    "id": 55, "title": "Algorithm Design and Complexity",
+    "category": "General Technology",
+    "file_name": "algorithms.txt",
+    "content": "Algorithm design is the process of defining step-by-step procedures to solve computational problems. Sorting algorithms include bubble sort, merge sort, quicksort, and heap sort. Searching algorithms include linear search and binary search. Graph algorithms like Dijkstra and BFS solve shortest path and traversal problems. Algorithm complexity is measured using Big O notation. Dynamic programming and greedy algorithms solve optimization problems efficiently by breaking them into subproblems."
+  },
+  {
+    "id": 56, "title": "Reinforcement Learning",
+    "category": "Machine Learning",
+    "file_name": "reinforcement_learning.txt",
+    "content": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment to maximize cumulative reward. Key concepts include states, actions, rewards, and policies. Q-learning and deep Q-networks learn optimal action-value functions. Policy gradient methods directly optimize the policy. Reinforcement learning has achieved superhuman performance in games like Chess, Go, and Atari games. Applications include robotics, autonomous vehicles, and resource management."
+  },
+  {
+    "id": 57, "title": "Bayesian Machine Learning",
+    "category": "Machine Learning",
+    "file_name": "bayesian_ml.txt",
+    "content": "Bayesian machine learning incorporates probabilistic reasoning into model building. Bayes theorem updates the probability of a hypothesis given new evidence. Naive Bayes classifiers assume feature independence and are effective for text classification and spam filtering. Gaussian processes provide probabilistic predictions with uncertainty estimates. Bayesian neural networks quantify uncertainty in predictions. Bayesian optimization is used for hyperparameter tuning of machine learning models."
+  },
+  {
+    "id": 58, "title": "Recommendation Systems",
+    "category": "Machine Learning",
+    "file_name": "recommender.txt",
+    "content": "Recommendation systems predict user preferences and suggest relevant items. Collaborative filtering recommends items based on preferences of similar users. Content-based filtering recommends items similar to those a user liked before. Matrix factorization techniques like SVD decompose user-item interaction matrices to discover latent factors. Hybrid systems combine collaborative and content-based approaches. Recommendation systems power Netflix, Amazon, and Spotify to personalize user experiences."
+  },
+  {
+    "id": 59, "title": "Anomaly Detection Techniques",
+    "category": "Machine Learning",
+    "file_name": "anomaly_detection.txt",
+    "content": "Anomaly detection identifies data points that deviate significantly from expected patterns. Statistical methods use z-scores and interquartile range to flag outliers. Isolation Forest and One-Class SVM are machine learning methods for anomaly detection. Autoencoders detect anomalies by measuring reconstruction error of unusual inputs. Anomaly detection is used in fraud detection, network intrusion detection, industrial equipment monitoring, and healthcare monitoring systems."
+  },
+  {
+    "id": 60, "title": "Time Series Analysis and Forecasting",
+    "category": "Data Science",
+    "file_name": "time_series.txt",
+    "content": "Time series analysis studies data points collected over time to identify trends, seasonality, and patterns. ARIMA models capture autocorrelation and moving average components in time series. Exponential smoothing methods like Holt-Winters handle trend and seasonality. Prophet is a Facebook-developed forecasting tool for business time series. LSTM networks and temporal convolutional networks are deep learning approaches to time series forecasting used in stock prediction and demand forecasting."
+  },
+  {
+    "id": 61, "title": "Graph Neural Networks",
+    "category": "Deep Learning",
+    "file_name": "gnn.txt",
+    "content": "Graph Neural Networks extend deep learning to graph-structured data. Nodes represent entities and edges represent relationships. Graph Convolutional Networks aggregate features from neighboring nodes. Graph Attention Networks use attention mechanisms to weight neighbor contributions. GNNs are used in social network analysis, molecular property prediction, knowledge graph completion, and recommendation systems. They can capture complex relational patterns that traditional neural networks cannot."
+  },
+  {
+    "id": 62, "title": "Self-Supervised Learning",
+    "category": "Deep Learning",
+    "file_name": "self_supervised.txt",
+    "content": "Self-supervised learning generates supervisory signals from the data itself without human annotation. Contrastive learning methods like SimCLR and MoCo learn representations by pulling similar samples together and pushing dissimilar ones apart. Masked language modeling used in BERT predicts missing words in sentences. Self-supervised pretraining on large unlabeled datasets produces powerful representations that transfer well to downstream tasks with limited labeled data."
+  },
+  {
+    "id": 63, "title": "Data Privacy and Ethics in AI",
+    "category": "Data Science",
+    "file_name": "ai_ethics.txt",
+    "content": "AI ethics addresses the moral implications of artificial intelligence systems. Bias in training data leads to discriminatory outcomes in hiring, lending, and criminal justice. Fairness, accountability, and transparency are core principles of responsible AI. Differential privacy adds mathematical noise to protect individual data in aggregate statistics. Federated learning trains models across decentralized devices without sharing raw data. GDPR and AI regulatory frameworks govern responsible data use and algorithmic decision-making."
+  },
+  {
+    "id": 64, "title": "Distributed Systems and Consistency",
+    "category": "General Technology",
+    "file_name": "distributed.txt",
+    "content": "Distributed systems consist of multiple computers that appear to users as a single coherent system. The CAP theorem states that distributed systems can guarantee only two of consistency, availability, and partition tolerance. Consensus algorithms like Paxos and Raft ensure agreement among distributed nodes. Eventual consistency models allow temporary inconsistency that resolves over time. Message queues, service meshes, and distributed databases are components of modern distributed architectures."
+  },
+  {
+    "id": 65, "title": "API Design and REST Principles",
+    "category": "General Technology",
+    "file_name": "api_design.txt",
+    "content": "An Application Programming Interface defines how software components interact. REST APIs use HTTP methods and stateless communication to expose resources as URLs. Good API design follows principles of consistency, versioning, proper status codes, and documentation. Authentication mechanisms include API keys, OAuth 2.0, and JWT tokens. Rate limiting prevents abuse. GraphQL provides flexible querying as an alternative to REST. OpenAPI specifications document REST APIs in a machine-readable format."
+  },
+  {
+    "id": 66, "title": "Social Network Analysis",
+    "category": "Data Science",
+    "file_name": "social_networks.txt",
+    "content": "Social network analysis studies relationships and information flows within social structures. Graph theory models social networks where nodes represent individuals and edges represent connections. Centrality measures like degree, betweenness, and eigenvector centrality identify influential nodes. Community detection algorithms discover tightly connected groups within networks. Social network analysis is applied in viral marketing, epidemiology, organizational behavior analysis, and detecting bot networks on social media."
+  },
+  {
+    "id": 67, "title": "Intrusion Detection Systems",
+    "category": "Cybersecurity",
+    "file_name": "ids.txt",
+    "content": "Intrusion Detection Systems monitor network traffic and system activity for malicious behavior. Signature-based detection compares traffic against known attack patterns. Anomaly-based detection identifies deviations from normal baseline behavior. Host-based IDS monitors activity on individual systems while network-based IDS monitors traffic on network segments. Machine learning enhances IDS by learning complex attack patterns that evade rule-based detection. SIEM systems aggregate security events for centralized analysis."
+  },
+  {
+    "id": 68, "title": "Zero Trust Security Architecture",
+    "category": "Cybersecurity",
+    "file_name": "zero_trust.txt",
+    "content": "Zero Trust is a security model based on the principle of never trust, always verify. Unlike perimeter-based security, Zero Trust assumes threats exist both inside and outside the network. Every access request is authenticated, authorized, and continuously validated. Micro-segmentation limits lateral movement of attackers within networks. Multi-factor authentication, privileged access management, and endpoint verification are key components. Zero Trust is especially important for cloud environments and remote workforces."
+  },
+  {
+    "id": 69, "title": "Data Center Architecture",
+    "category": "Cloud Computing",
+    "file_name": "datacenter.txt",
+    "content": "Data centers house computing infrastructure including servers, storage systems, and networking equipment. Tier classification from Tier 1 to Tier 4 defines reliability and uptime guarantees. Power distribution systems, cooling infrastructure, and physical security are critical data center components. Power Usage Effectiveness measures energy efficiency. Software-defined networking and software-defined storage enable flexible infrastructure management. Modern hyperscale data centers support millions of servers for major cloud providers."
+  },
+  {
+    "id": 70, "title": "Load Balancing and High Availability",
+    "category": "Cloud Computing",
+    "file_name": "load_balancing.txt",
+    "content": "Load balancing distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed. Round-robin, least connections, and IP hash are common load balancing algorithms. Health checks detect failed servers and route traffic away from them. Application load balancers operate at layer 7 and can route based on URL paths and headers. High availability architecture uses redundant components and failover mechanisms to eliminate single points of failure and maintain uptime."
+  },
+  {
+    "id": 71, "title": "Compiler Design and Language Processing",
+    "category": "General Technology",
+    "file_name": "compiler.txt",
+    "content": "A compiler translates source code written in a high-level programming language into machine code. Compilation phases include lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation. Lexers tokenize source code into meaningful units. Parsers build abstract syntax trees from token streams. Interpreters execute code directly without compilation. Just-in-time compilation combines interpretation and compilation for improved performance in virtual machines."
+  },
+  {
+    "id": 72, "title": "Human Computer Interaction",
+    "category": "General Technology",
+    "file_name": "hci.txt",
+    "content": "Human Computer Interaction studies how people interact with computers and how to design usable interfaces. Usability principles include learnability, efficiency, memorability, error prevention, and user satisfaction. User-centered design involves users throughout the design process. Accessibility ensures interfaces are usable by people with disabilities. Prototyping, user testing, and heuristic evaluation are HCI research methods. Touchscreens, voice interfaces, gesture recognition, and brain-computer interfaces represent evolving HCI paradigms."
+  },
+  {
+    "id": 73, "title": "Search Engine Optimization",
+    "category": "Information Retrieval",
+    "file_name": "seo.txt",
+    "content": "Search Engine Optimization improves the visibility and ranking of web pages in search engine results. On-page SEO involves optimizing title tags, meta descriptions, headings, and content for target keywords. Technical SEO ensures websites are crawlable, indexable, and fast-loading. Off-page SEO builds backlinks from authoritative websites. Structured data markup helps search engines understand page content. Search engine algorithms evaluate content relevance, authority, and user experience signals for ranking."
+  },
+  {
+    "id": 74, "title": "Federated Learning and Privacy Preserving AI",
+    "category": "Machine Learning",
+    "file_name": "federated.txt",
+    "content": "Federated learning trains machine learning models across multiple decentralized devices without sharing raw data. Each device trains a local model on its data and sends only model updates to a central server. The central server aggregates updates using federated averaging. This approach preserves privacy as sensitive data never leaves the device. Applications include mobile keyboard prediction, healthcare analytics, and fraud detection where data privacy is critical."
+  },
+  {
+    "id": 75, "title": "AutoML and Neural Architecture Search",
+    "category": "Machine Learning",
+    "file_name": "automl.txt",
+    "content": "AutoML automates the process of applying machine learning to real-world problems. It automates data preprocessing, feature engineering, model selection, and hyperparameter tuning. Neural Architecture Search automatically designs neural network architectures optimized for specific tasks. Bayesian optimization and evolutionary algorithms are used in AutoML pipelines. Tools like Google AutoML, H2O.ai, and Auto-sklearn democratize machine learning by enabling non-experts to build competitive models."
+  },
+  {
+    "id": 76, "title": "Edge Computing and Fog Computing",
+    "category": "Cloud Computing",
+    "file_name": "edge_computing.txt",
+    "content": "Edge computing processes data closer to where it is generated rather than sending it to centralized data centers. This reduces latency, bandwidth consumption, and improves privacy. Fog computing extends cloud capabilities to the network edge. Industrial IoT applications use edge computing for real-time monitoring and control. Self-driving vehicles require edge processing for immediate decisions. Mobile edge computing brings computing resources to cellular network base stations for low-latency mobile applications."
+  },
+  {
+    "id": 77, "title": "Bioinformatics and Computational Biology",
+    "category": "Data Science",
+    "file_name": "bioinformatics.txt",
+    "content": "Bioinformatics applies computational methods to biological data analysis. Sequence alignment algorithms compare DNA and protein sequences to find similarities. Genome assembly reconstructs complete genomes from sequencing fragments. Phylogenetic analysis studies evolutionary relationships between species. Machine learning identifies patterns in gene expression data for disease classification. Protein structure prediction determines three-dimensional structures from amino acid sequences. Bioinformatics enables drug discovery, personalized medicine, and understanding of genetic diseases."
+  },
+  {
+    "id": 78, "title": "Spatial Data and Geographic Information Systems",
+    "category": "Data Science",
+    "file_name": "gis.txt",
+    "content": "Geographic Information Systems manage, analyze, and visualize spatial data tied to geographic locations. Geospatial data types include points, lines, polygons, and raster images. Spatial databases store and query location-based data efficiently. GPS systems provide accurate positioning. Remote sensing satellites capture high-resolution imagery for land use mapping, climate monitoring, and disaster response. Machine learning applied to geospatial data enables urban planning, precision agriculture, and logistics optimization."
+  },
+  {
+    "id": 79, "title": "Natural Language Generation and Text Summarization",
+    "category": "Artificial Intelligence",
+    "file_name": "nlg.txt",
+    "content": "Natural Language Generation produces human-readable text from structured data or other inputs. Text summarization condenses documents into shorter versions while preserving key information. Extractive summarization selects and combines existing sentences. Abstractive summarization generates new sentences that capture the essence of the original text. Encoder-decoder architectures with attention mechanisms power modern summarization systems. NLG is used in automatic report generation, chatbots, and content creation."
+  },
+  {
+    "id": 80, "title": "Knowledge Graphs and Semantic Web",
+    "category": "Artificial Intelligence",
+    "file_name": "knowledge_graph.txt",
+    "content": "Knowledge graphs represent information as a network of entities and relationships. Nodes represent real-world entities and edges represent the relationships between them. RDF triples describe knowledge as subject-predicate-object statements. SPARQL is a query language for semantic web data. Google Knowledge Graph enhances search results with structured entity information. Knowledge graphs enable question answering, semantic search, and reasoning over interconnected information. Ontologies provide formal definitions of domain concepts and relationships."
+  }
+]

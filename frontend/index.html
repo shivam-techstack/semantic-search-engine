@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semantic Search Engine</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>🔍 Semantic Search Engine</h1>
+    <p>Information Retrieval using Word Embeddings · Rocchio Feedback · Query Expansion · Inverted Index</p>
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-page="search">🔍 Search</button>
+      <button class="nav-tab"        data-page="compare">⚖️ Compare Modes</button>
+      <button class="nav-tab"        data-page="index">📋 Inverted Index</button>
+      <button class="nav-tab"        data-page="evaluate">📊 Evaluation</button>
+      <button class="nav-tab"        data-page="about">ℹ️ About</button>
+    </nav>
+  </div>
+</header>
+
+<main><div class="container">
+
+<!-- ======================================================
+     PAGE 1 — SEARCH (4 modes)
+====================================================== -->
+<section id="page-search" class="page active">
+
+  <div class="search-box">
+    <h2>Search 80 Documents — Choose a Retrieval Mode</h2>
+    <div class="search-row">
+      <input id="search-input" class="search-input" type="text"
+             placeholder="e.g. How can doctors detect diseases early?"
+             autocomplete="off"/>
+      <button id="search-btn"  class="btn btn-primary">Search</button>
+      <button id="clear-btn"   class="btn btn-secondary">Clear</button>
+    </div>
+
+    <!-- 4-mode pills -->
+    <div class="mode-pills" id="mode-pills">
+      <label class="mode-pill checked-semantic" id="pill-semantic">
+        <input type="radio" name="stype" value="semantic" checked/>
+        🧠 Semantic
+      </label>
+      <label class="mode-pill" id="pill-keyword">
+        <input type="radio" name="stype" value="keyword"/>
+        🔑 Keyword (TF-IDF)
+      </label>
+      <label class="mode-pill" id="pill-expanded">
+        <input type="radio" name="stype" value="expanded"/>
+        🌐 Query Expansion
+      </label>
+      <label class="mode-pill" id="pill-rocchio">
+        <input type="radio" name="stype" value="rocchio"/>
+        🎯 Rocchio Feedback
+      </label>
+      <span class="topk-wrap">
+        Top <select id="top-k"><option value="5">5</option><option value="10" selected>10</option><option value="15">15</option></select>
+      </span>
+    </div>
+
+    <!-- Mode description strip -->
+    <div id="mode-desc" style="margin-top:10px;font-size:.83rem;color:var(--muted);min-height:18px;"></div>
+
+    <div class="sample-queries">
+      <p>Try a sample:</p>
+      <div class="query-chips" id="sample-chips">
+        <span class="query-chip">How can doctors detect diseases?</span>
+        <span class="query-chip">securing computer networks</span>
+        <span class="query-chip">machine learning classification</span>
+        <span class="query-chip">storing large amounts of data</span>
+        <span class="query-chip">neural network image recognition</span>
+        <span class="query-chip">text search and document retrieval</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="search-spinner" class="spinner"><div class="spinner-ring"></div><p>Searching…</p></div>
+  <div id="search-results"></div>
+  <div id="similar-panel"></div>
+
+</section>
+
+
+<!-- ======================================================
+     PAGE 2 — COMPARE ALL 4 MODES
+====================================================== -->
+<section id="page-compare" class="page">
+
+  <div class="search-box">
+    <h2>Compare All 4 Retrieval Modes Side-by-Side</h2>
+    <p style="font-size:.86rem;color:var(--muted);margin-bottom:13px;">
+      Runs the same query through Semantic, Keyword, Query Expansion, and Rocchio — 
+      reveals how each method ranks documents differently.
+      Inspired by the 4-mode design of the <em>google-but-smarter</em> project.
+    </p>
+    <div class="search-row">
+      <input id="compare-input" class="search-input" type="text"
+             placeholder="e.g. How can doctors identify diseases?"
+             autocomplete="off"/>
+      <button id="compare-btn" class="btn btn-primary">Compare</button>
+    </div>
+    <div class="query-chips" style="margin-top:11px;" id="compare-chips">
+      <span class="query-chip">How can doctors identify diseases?</span>
+      <span class="query-chip">protecting systems from attackers</span>
+      <span class="query-chip">predicting future values from data</span>
+      <span class="query-chip">understanding human language</span>
+    </div>
+  </div>
+
+  <div id="compare-spinner" class="spinner"><div class="spinner-ring"></div><p>Running all 4 modes…</p></div>
+  <div id="compare-results"></div>
+
+</section>
+
+
+<!-- ======================================================
+     PAGE 3 — INVERTED INDEX DEMO
+====================================================== -->
+<section id="page-index" class="page">
+
+  <div class="search-box">
+    <h2>📋 Inverted Index — Term Lookup</h2>
+    <p style="font-size:.86rem;color:var(--muted);margin-bottom:13px;">
+      An inverted index maps each word to the list of documents that contain it —
+      the core data structure used by all search engines.
+      Enter a word to see its <strong>posting list</strong>.
+    </p>
+    <div class="search-row">
+      <input id="index-input" class="search-input" type="text"
+             placeholder="e.g. neural" autocomplete="off" style="max-width:320px;"/>
+      <button id="index-btn" class="btn btn-primary">Lookup</button>
+    </div>
+    <div class="query-chips" style="margin-top:11px;" id="index-chips">
+      <span class="query-chip">neural</span>
+      <span class="query-chip">encryption</span>
+      <span class="query-chip">cluster</span>
+      <span class="query-chip">retrieval</span>
+      <span class="query-chip">network</span>
+      <span class="query-chip">learning</span>
+      <span class="query-chip">vector</span>
+    </div>
+  </div>
+
+  <div id="index-spinner" class="spinner"><div class="spinner-ring"></div><p>Looking up…</p></div>
+  <div id="index-results"></div>
+
+</section>
+
+
+<!-- ======================================================
+     PAGE 4 — EVALUATION
+====================================================== -->
+<section id="page-evaluate" class="page">
+
+  <div class="search-box">
+    <h2>Precision / Recall / F1 Evaluation</h2>
+    <p style="font-size:.86rem;color:var(--muted);margin-bottom:14px;">
+      Evaluates Semantic and Keyword search on 10 manually labelled test queries.
+    </p>
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+      <label style="font-size:.88rem;">Evaluate at K =
+        <select id="eval-k"><option value="3">3</option><option value="5" selected>5</option><option value="10">10</option></select>
+      </label>
+      <button id="eval-btn" class="btn btn-primary">Run Evaluation</button>
+    </div>
+  </div>
+
+  <div id="eval-spinner" class="spinner"><div class="spinner-ring"></div><p>Running evaluation on 10 test queries…</p></div>
+  <div id="eval-results"></div>
+
+</section>
+
+
+<!-- ======================================================
+     PAGE 5 — ABOUT
+====================================================== -->
+<section id="page-about" class="page">
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="icon">📄</div>
+      <h4>Document Collection</h4>
+      <p>80 documents across 9 categories: AI, ML, Deep Learning, Data Science,
+         Cybersecurity, Cloud Computing, IR, Computer Networks, General Tech.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🧬</div>
+      <h4>Word2Vec (Semantic)</h4>
+      <p>Skip-gram model trained on the corpus. Each word → 100-dim vector.
+         Documents and queries represented as averaged word vectors.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🔑</div>
+      <h4>TF-IDF (Keyword)</h4>
+      <p>Term Frequency × Inverse Document Frequency. Matches documents by
+         exact query words weighted by rarity across the collection.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🌐</div>
+      <h4>Query Expansion</h4>
+      <p>Before searching, adds semantically similar words to the query using
+         Word2Vec similarity. Bridges the vocabulary gap between query and docs.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🎯</div>
+      <h4>Rocchio Feedback</h4>
+      <p>Runs an initial search, then pushes the query vector toward the top
+         results' centroid (α·query + β·centroid). Re-ranks with improved vector.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">📋</div>
+      <h4>Inverted Index</h4>
+      <p>Maps each vocabulary term to its posting list — the set of document IDs
+         that contain that term. Core data structure of all search engines.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🔗</div>
+      <h4>More Like This</h4>
+      <p>Uses a document's own precomputed vector as the query to find the
+         most semantically similar documents in the collection.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">📐</div>
+      <h4>Cosine Similarity</h4>
+      <p>Measures the angle between two vectors. Score 1.0 = same direction
+         (identical meaning); 0.0 = orthogonal (unrelated).</p>
+    </div>
+  </div>
+
+  <div class="workflow-steps">
+    <h3>System Workflow — All 4 Modes</h3>
+    <ul class="step-list">
+      <li><span class="step-num">1</span><span class="step-text"><strong>Preprocessing (shared)</strong>Lowercase → remove punctuation → tokenize → stop word removal → lemmatize.</span></li>
+      <li><span class="step-num">2</span><span class="step-text"><strong>Word2Vec Training</strong>Skip-gram, 100-dim vectors, window 5, 50 epochs on all 80 documents.</span></li>
+      <li><span class="step-num">3</span><span class="step-text"><strong>Indexing</strong>Document vectors (averaged Word2Vec), TF-IDF matrix, and Inverted Index are all built once at startup.</span></li>
+      <li><span class="step-num">4</span><span class="step-text"><strong>Semantic mode</strong>Query → preprocess → average Word2Vec → cosine similarity vs all doc vectors → rank.</span></li>
+      <li><span class="step-num">5</span><span class="step-text"><strong>Keyword mode</strong>Query → preprocess → TF-IDF vector → cosine similarity vs TF-IDF matrix → rank.</span></li>
+      <li><span class="step-num">6</span><span class="step-text"><strong>Query Expansion mode</strong>Query tokens → find similar words in W2V vocab → add them → average expanded tokens → cosine similarity → rank.</span></li>
+      <li><span class="step-num">7</span><span class="step-text"><strong>Rocchio mode</strong>Initial semantic search → centroid of top-3 results → α·query + β·centroid → normalize → re-rank all docs.</span></li>
+    </ul>
+  </div>
+
+  <div id="status-box" style="margin-top:18px;"></div>
+
+</section>
+
+</div></main>
+
+<footer>
+  <p>Semantic Search Engine v2 &mdash; ISR College Project &mdash;
+     Flask · Gensim Word2Vec · NLTK · scikit-learn · SQLite &mdash;
+     Inspired by <em>google-but-smarter</em></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
